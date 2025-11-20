@@ -1,14 +1,5 @@
 <div align="center">
 
-# 🛍️ **Stylify - Your Ultimate Clothing Store** 🛍️  
-
-> **Where Fashion Meets Technology and Idea**  
-
-[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=20232A)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=for-the-badge&logo=vite&logoColor=white&labelColor=20232A)](https://vitejs.dev/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0.15-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=20232A)](https://tailwindcss.com/)
-[![Express.js](https://img.shields.io/badge/Express-4.18.0-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-
 </div>
 
 ## ✨ **Features**
@@ -35,16 +26,6 @@
 
 </div>
 
-<!--
-## 📝 License
-
-<div align="center">
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-</div>
 
 -->
 
