@@ -27,7 +27,18 @@ import loop2 from './loop2.png'
 import loop3 from './loop3.png'
 import loop4 from './loop4.png'
 import loop5 from './loop5.png'
-
+import art from './art.png'
+import craft from './craft.png'
+import decor1 from './1.png'
+import decor2 from './2.png'
+import decor3 from './3.png'
+import decor4 from './4.png'
+import decor5 from './5.png'
+import decor6 from './6.png'
+import decor7 from './7.png'
+import decor8 from './8.png'
+import decor9 from './9.png'
+import decor10 from './10.png'
 
 
 export const assets = {
@@ -55,6 +66,7 @@ export const assets = {
     sustainable,
     circularfashion,
     loop1,
-    loop2,loop3,loop4,loop5
+    loop2,loop3,loop4,loop5,
+    art, craft,decor1,decor2,decor3,decor4,decor5,decor6,decor7,decor8,decor9,decor10
 }
 

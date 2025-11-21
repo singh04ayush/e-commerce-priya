@@ -16,6 +16,11 @@ const Navbar = () => {
     setCartItems,
   } = useContext(ShopContext);
 
+  const handleCategoryClick = (mainCategory, menuItem) => {
+    navigate(`/collection?navlink=${encodeURIComponent(mainCategory)}&sub-category=${encodeURIComponent(menuItem)}`);
+    setHoveredMenu(null);
+  };
+
   const logout = () => {
     navigate("/login");
     localStorage.removeItem("token");
@@ -124,7 +129,7 @@ const Navbar = () => {
                   <div key={column.category} className="min-w-40">
                     <p className="text-red-700 font-semibold text-sm mb-3">{column.category}</p>
                     {column.items.map((item) => (
-                      <p key={item} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
+                      <p key={item} onClick={() => handleCategoryClick('Clothing', item)} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
                         {item}
                       </p>
                     ))}
@@ -150,7 +155,7 @@ const Navbar = () => {
                   <div key={column.category} className="min-w-40">
                     <p className="text-red-700 font-semibold text-sm mb-3">{column.category}</p>
                     {column.items.map((item) => (
-                      <p key={item} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
+                      <p key={item} onClick={() => handleCategoryClick('Accessories', item)} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
                         {item}
                       </p>
                     ))}
@@ -176,7 +181,7 @@ const Navbar = () => {
                   <div key={column.category} className="min-w-40">
                     <p className="text-red-700 font-semibold text-sm mb-3">{column.category}</p>
                     {column.items.map((item) => (
-                      <p key={item} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
+                      <p key={item} onClick={() => handleCategoryClick('Artisans', item)} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
                         {item}
                       </p>
                     ))}
@@ -202,7 +207,7 @@ const Navbar = () => {
                   <div key={column.category} className="min-w-40">
                     <p className="text-red-700 font-semibold text-sm mb-3">{column.category}</p>
                     {column.items.map((item) => (
-                      <p key={item} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
+                      <p key={item} onClick={() => handleCategoryClick('Decor', item)} className="text-gray-700 text-sm py-1 hover:text-red-700 cursor-pointer whitespace-nowrap">
                         {item}
                       </p>
                     ))}
@@ -241,7 +246,7 @@ const Navbar = () => {
           />
           {/* drop down */}
           {token && (
-            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
+            <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-50">
               <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
                 <p
                   onClick={() => navigate("/profile")}

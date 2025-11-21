@@ -1,4 +1,5 @@
 import React from 'react'
+import { assets } from '../assets/assets'
 
 const NewsLetterBox = () => {
 
@@ -8,6 +9,8 @@ const NewsLetterBox = () => {
     
   return (
     <div className='text-center'>
+      <img src={assets.decor7} className='w-32 h-32 opacity-60 mx-auto mb-4' alt="Decor" />
+      
       <p className='text-2xl font-medium text-gray-800'>Subscribe Now & Get Exclusive Offers</p>
       <p className='text-gray-400 mt-3'>Enter your email to unlock savings and surprises!</p>
       <form className='w-full sm:w-1/2 flex items-center gap-3 mx-auto my-6 border pl-3'>

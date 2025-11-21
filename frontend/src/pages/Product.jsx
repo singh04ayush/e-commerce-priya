@@ -6,7 +6,7 @@ import RelatedProducts from '../components/RelatedProducts';
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency, addToCart } = useContext(ShopContext);
+  const { products, currency, addToCart, cartItems, updateQuantity } = useContext(ShopContext);
   const [productData, setProductData] = useState(false);
   const [image, setImage] = useState('');
 
@@ -62,12 +62,41 @@ const Product = () => {
           </p>
           <p className="mt-5 text-gray-500 md:w-4/5">{productData.description}</p>
 
-          <button
-            onClick={() => addToCart(productData._id)}
-            className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 mt-6"
-          >
-            ADD TO CART
-          </button>
+          {cartItems[productData._id] ? (
+            <div className="flex items-center gap-3 mt-6">
+              <button
+                onClick={() => updateQuantity(productData._id, cartItems[productData._id] - 1)}
+                className="bg-gray-300 text-black px-4 py-3 text-sm hover:bg-gray-400"
+              >
+                −
+              </button>
+              <input
+                type="number"
+                value={cartItems[productData._id]}
+                onChange={(e) => {
+                  const value = Number(e.target.value);
+                  if (value > 0) {
+                    updateQuantity(productData._id, value);
+                  }
+                }}
+                className="border border-gray-300 w-16 py-3 text-center text-sm"
+                min="1"
+              />
+              <button
+                onClick={() => updateQuantity(productData._id, cartItems[productData._id] + 1)}
+                className="bg-black text-white px-4 py-3 text-sm active:bg-gray-700 hover:bg-gray-800"
+              >
+                +
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={() => addToCart(productData._id)}
+              className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 mt-6"
+            >
+              ADD TO CART
+            </button>
+          )}
 
           <hr className="mt-8 sm:w-4/5" />
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-1">

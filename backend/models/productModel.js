@@ -8,6 +8,13 @@ const productSchema = new mongoose.Schema({
     category: {type: String, required: true},
     subCategory: {type:String, required:true},
     bestseller: {type:Boolean},
+    latestCollection: {type:Boolean},
+    handCraftedtops: {type:Boolean},
+    handCraftedSarees: {type:Boolean},
+    craft: {type:Boolean},
+    clutchesAndPotlis: {type:Boolean},
+    stationary: {type:Boolean},
+    homeDecor: {type:Boolean},
     date:{type:Number, required: true}
 })
 
