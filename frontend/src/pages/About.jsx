@@ -15,13 +15,13 @@ const About = () => {
         <img src={assets.about_img} className='w-full md:max-w-[450px]' alt="" />
         <div className='relative flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
           {/* Leaf near first paragraph */}
-          <svg className='absolute -left-8 top-0 w-10 h-10 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -left-8 top-0 w-10 h-10 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="50" cy="50" rx="15" ry="30" fill="none" stroke="#8b9d6f" strokeWidth="2" transform="rotate(-45 50 50)"/>
             <path d="M50 25 Q52 50 50 75" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
           </svg>
 
           {/* Flower near second paragraph */}
-          <svg className='absolute -right-8 top-24 w-10 h-10 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -right-8 top-24 w-10 h-10 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="5" fill="#d4a574"/>
             <circle cx="50" cy="30" r="4" fill="#c9a961"/>
             <circle cx="70" cy="50" r="4" fill="#c9a961"/>
@@ -30,13 +30,13 @@ const About = () => {
           </svg>
 
           {/* Leaf near Our Mission */}
-          <svg className='absolute -left-6 top-56 w-8 h-8 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -left-6 top-56 w-8 h-8 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10 Q70 30 60 70 Q50 80 40 70 Q30 30 50 10" stroke="#8b9d6f" strokeWidth="2" fill="none"/>
             <path d="M50 20 Q55 40 50 70" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
           </svg>
 
           {/* Small flower near mission text */}
-          <svg className='absolute -right-6 bottom-8 w-8 h-8 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -right-6 bottom-8 w-8 h-8 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="4" fill="#d4a574"/>
             <circle cx="50" cy="35" r="3" fill="#c9a961"/>
             <circle cx="65" cy="50" r="3" fill="#c9a961"/>
@@ -57,10 +57,10 @@ const About = () => {
 
       <div className='relative grid grid-cols-1 md:grid-cols-3 gap-6 mb-20'>
         {/* Top Right Decor Image */}
-        <img src={assets.decor1} className='absolute -top-12 -right-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor1} className='absolute -top-12 -right-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
         
         {/* Bottom Left Decor Image */}
-        <img src={assets.decor2} className='absolute -bottom-12 -left-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor2} className='absolute -bottom-12 -left-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
 
         {/* Quality Assurance Card - Neon Blue */}
         <div className='rounded-lg overflow-hidden shadow-lg transform transition-transform hover:scale-105 hover:shadow-xl'>
@@ -123,7 +123,7 @@ const About = () => {
 
       <div className='relative my-20 flex flex-col md:flex-row gap-16 items-center'>
         {/* Bottom Right Decor Image */}
-        <img src={assets.decor3} className='absolute -bottom-12 -right-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor3} className='absolute -bottom-12 -right-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
         
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
           <div className='text-2xl'>
@@ -138,7 +138,7 @@ const About = () => {
 
       <div className='relative my-20 flex flex-col md:flex-row gap-16 items-center'>
         {/* Top Left Decor Image */}
-        <img src={assets.decor4} className='absolute -top-12 -left-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor4} className='absolute -top-12 -left-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
         
         <img src={assets.craft} className='w-full md:max-w-[450px]' alt="Crafts" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
@@ -152,13 +152,13 @@ const About = () => {
 
       <div className='relative my-20 py-16 text-center'>
         {/* Top Right Decor Image */}
-        <img src={assets.decor5} className='absolute -top-12 -right-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor5} className='absolute -top-12 -right-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
         
         {/* Bottom Left Decor Image */}
-        <img src={assets.decor6} className='absolute -bottom-12 -left-12 w-32 h-32 opacity-60 hidden md:block' alt="Decor" />
+        <img src={assets.decor6} className='absolute -bottom-12 -left-12 w-32 h-32 opacity-100 hidden md:block' alt="Decor" />
         
         {/* Flower Doodles */}
-        <svg className='absolute top-20 left-10 w-16 h-16 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='absolute top-20 left-10 w-16 h-16 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="8" fill="#d4a574"/>
           <circle cx="50" cy="30" r="6" fill="#c9a961"/>
           <circle cx="70" cy="45" r="6" fill="#c9a961"/>
@@ -168,13 +168,13 @@ const About = () => {
         </svg>
 
         {/* Leaf Doodle */}
-        <svg className='absolute top-40 right-20 w-12 h-12 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='absolute top-40 right-20 w-12 h-12 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M50 10 Q70 30 60 70 Q50 80 40 70 Q30 30 50 10" stroke="#8b9d6f" strokeWidth="2" fill="none"/>
           <path d="M50 20 Q55 40 50 70" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
         </svg>
 
         {/* Flower Doodle 2 */}
-        <svg className='absolute bottom-32 left-16 w-14 h-14 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='absolute bottom-32 left-16 w-14 h-14 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="50" cy="50" r="6" fill="#d4a574"/>
           <circle cx="50" cy="25" r="5" fill="#c9a961"/>
           <circle cx="75" cy="50" r="5" fill="#c9a961"/>
@@ -183,20 +183,20 @@ const About = () => {
         </svg>
 
         {/* Leaf Doodle 2 */}
-        <svg className='absolute bottom-20 right-12 w-10 h-10 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='absolute bottom-20 right-12 w-10 h-10 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="50" cy="50" rx="20" ry="35" fill="none" stroke="#8b9d6f" strokeWidth="2" transform="rotate(-30 50 50)"/>
           <path d="M50 20 Q55 50 50 80" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
         </svg>
         
         <div className='text-2xl mb-8 relative inline-block w-full'>
           {/* Small leaf near title */}
-          <svg className='absolute -left-8 top-0 w-8 h-8 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -left-8 top-0 w-8 h-8 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="50" cy="50" rx="15" ry="30" fill="none" stroke="#8b9d6f" strokeWidth="2" transform="rotate(-45 50 50)"/>
             <path d="M50 25 Q52 50 50 75" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
           </svg>
           
           {/* Small flower near title */}
-          <svg className='absolute -right-8 top-0 w-8 h-8 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -right-8 top-0 w-8 h-8 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="4" fill="#d4a574"/>
             <circle cx="50" cy="35" r="3" fill="#c9a961"/>
             <circle cx="65" cy="50" r="3" fill="#c9a961"/>
@@ -209,13 +209,13 @@ const About = () => {
         
         <div className='max-w-2xl mx-auto relative'>
           {/* Leaf on left of text */}
-          <svg className='absolute -left-12 top-4 w-10 h-10 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -left-12 top-4 w-10 h-10 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 10 Q70 30 60 70 Q50 80 40 70 Q30 30 50 10" stroke="#8b9d6f" strokeWidth="2" fill="none"/>
             <path d="M50 20 Q55 40 50 70" stroke="#8b9d6f" strokeWidth="1.5" fill="none"/>
           </svg>
           
           {/* Flower on right of text */}
-          <svg className='absolute -right-12 top-4 w-10 h-10 opacity-40 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className='absolute -right-12 top-4 w-10 h-10 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="5" fill="#d4a574"/>
             <circle cx="50" cy="30" r="4" fill="#c9a961"/>
             <circle cx="70" cy="50" r="4" fill="#c9a961"/>

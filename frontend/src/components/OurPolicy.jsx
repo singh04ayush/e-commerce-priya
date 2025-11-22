@@ -3,7 +3,18 @@ import { assets } from '../assets/assets'
 
 const OurPolicy = () => {
   return (
-    <div className='flex flex-col sm:flex-row justify-around gap-12 sm:gap-2 text-center py-20 text-xs sm:text-sm md:text-base text-gray-700'>
+    <div className='relative flex flex-col sm:flex-row justify-around gap-12 sm:gap-2 text-center py-20 text-xs sm:text-sm md:text-base text-gray-700'>
+      {/* Top Right Decor Image */}
+      <img src={assets.decor9} className='absolute -top-8 -right-12 w-24 h-24 opacity-100 hidden md:block' alt="Decor" />
+      
+      {/* Flower Doodle Top Left */}
+      <svg className='absolute top-8 left-32 w-12 h-12 opacity-100 hidden md:block' viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="6" fill="#d4a574"/>
+        <circle cx="50" cy="30" r="5" fill="#c9a961"/>
+        <circle cx="70" cy="50" r="5" fill="#c9a961"/>
+        <circle cx="50" cy="70" r="5" fill="#c9a961"/>
+        <circle cx="30" cy="50" r="5" fill="#c9a961"/>
+      </svg>
 
         <div>
             <img src={assets.women} className='w-16 h-16 m-auto mb-5 object-contain' alt="Women Empowerment" />
